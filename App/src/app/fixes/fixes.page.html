@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar class="PageTop">
+   
+    <ion-chip outline color="primary"slot="start" (click)="dismissModal()">
+      <ion-label>
+        Retour
+      </ion-label>
+    </ion-chip>
+      <p class="ion-text-center">Détails de panne </p>
+    
+      <ion-chip slot="end" (click)="SeeUser()">
+        <ion-avatar>
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjYzVkYmZmIiBkPSJNMCAwaDUxMnY1MTJIMHoiLz48cGF0aCBkPSJNMjU2IDMwNGM2MS42IDAgMTEyLTUwLjQgMTEyLTExMlMzMTcuNiA4MCAyNTYgODBzLTExMiA1MC40LTExMiAxMTIgNTAuNCAxMTIgMTEyIDExMnptMCA0MGMtNzQuMiAwLTIyNCAzNy44LTIyNCAxMTJ2NTZoNDQ4di01NmMwLTc0LjItMTQ5LjgtMTEyLTIyNC0xMTJ6IiBmaWxsPSIjODJhZWZmIi8+PC9zdmc+" />
+        </ion-avatar>
+        <ion-label>B C</ion-label>
+      </ion-chip>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let it of Fixes ">
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>
+        {{it.title}}
+      </ion-label>
+    </ion-item>
+  
+    <ion-card-content>
+      <p class="reason">
+       Raison: {{it.reason}}
+      </p>
+      <p  class="wayToFix">
+        Solution: {{it.contentToFix}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

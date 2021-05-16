@@ -1,0 +1,29 @@
+
+<ion-header>
+  <ion-toolbar class="PageTop">
+   
+    <ion-chip outline color="primary"slot="start" routerLink="/home">
+      <ion-label>
+        Retour
+      </ion-label>
+    </ion-chip>
+      <p class="ion-text-center">Mécanos </p>
+    
+      <ion-chip slot="end" (click)="SeeUser()">
+        <ion-avatar>
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjYzVkYmZmIiBkPSJNMCAwaDUxMnY1MTJIMHoiLz48cGF0aCBkPSJNMjU2IDMwNGM2MS42IDAgMTEyLTUwLjQgMTEyLTExMlMzMTcuNiA4MCAyNTYgODBzLTExMiA1MC40LTExMiAxMTIgNTAuNCAxMTIgMTEyIDExMnptMCA0MGMtNzQuMiAwLTIyNCAzNy44LTIyNCAxMTJ2NTZoNDQ4di01NmMwLTc0LjItMTQ5LjgtMTEyLTIyNC0xMTJ6IiBmaWxsPSIjODJhZWZmIi8+PC9zdmc+" />
+        </ion-avatar>
+        <ion-label>B C</ion-label>
+      </ion-chip>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item *ngFor="let it of mechanicians;let i=index " (click)="showDetails(i)" >
+    <ion-label>{{it.name}}</ion-label>
+    <ion-note slot="end" color="primary">{{it.dist/1000}} Km</ion-note>
+  </ion-item>
+
+</ion-content>

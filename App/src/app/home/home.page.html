@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar class="PageTop">
+   
+    <ion-chip outline color="primary"slot="start" (click)="createShop()">
+      <ion-label>Logo</ion-label>
+    </ion-chip>
+      <p class="ion-text-center"> Acceuille</p>
+    
+      <ion-chip slot="end" (click)="SeeUser()">
+        <ion-avatar>
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjYzVkYmZmIiBkPSJNMCAwaDUxMnY1MTJIMHoiLz48cGF0aCBkPSJNMjU2IDMwNGM2MS42IDAgMTEyLTUwLjQgMTEyLTExMlMzMTcuNiA4MCAyNTYgODBzLTExMiA1MC40LTExMiAxMTIgNTAuNCAxMTIgMTEyIDExMnptMCA0MGMtNzQuMiAwLTIyNCAzNy44LTIyNCAxMTJ2NTZoNDQ4di01NmMwLTc0LjItMTQ5LjgtMTEyLTIyNC0xMTJ6IiBmaWxsPSIjODJhZWZmIi8+PC9zdmc+" />
+        </ion-avatar>
+        <ion-label>B C</ion-label>
+      </ion-chip>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-grid>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="8">
+         <ion-card>
+          <img src="assets/carSolo.jpg" alt="Image voiture">
+           <ion-card-content>
+             <p>Marque: Toyota</p>
+             <p>Model: Yaris</p>
+           </ion-card-content>
+         </ion-card>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/diagnostique">
+          <img src="assets/shapes.svg" alt="Image boutton">
+          <ion-card-content>
+            Diagnostique
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+         <ion-card  routerLink="/fix" >
+          <img src="assets/shapes.svg" alt="Image boutton">  
+          <ion-card-content>
+            Reparer
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="assets/shapes.svg" alt="Image boutton">
+          <ion-card-content>
+            Réparations
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img src="assets/shapes.svg" alt="Image boutton" routerLink="/mechanicians">
+          <ion-card-content>
+           Garages
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

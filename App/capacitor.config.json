@@ -1,0 +1,16 @@
+{
+  "appId": "com.example.app",
+  "appName": "Cardiagno",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  
+  "linuxAndroidStudioPath": "/home/chris/android-studio-id/bin/studio.sh"
+  
+}

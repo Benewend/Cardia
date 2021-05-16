@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar class="PageTop">
+   
+    <ion-chip outline color="primary"slot="start" routerLink="/home">
+      <ion-label>
+        Retour
+      </ion-label>
+    </ion-chip>
+      <p class="ion-text-center"> Diagnostique </p>
+    
+      <ion-chip slot="end" (click)="SeeUser()">
+        <ion-avatar>
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjYzVkYmZmIiBkPSJNMCAwaDUxMnY1MTJIMHoiLz48cGF0aCBkPSJNMjU2IDMwNGM2MS42IDAgMTEyLTUwLjQgMTEyLTExMlMzMTcuNiA4MCAyNTYgODBzLTExMiA1MC40LTExMiAxMTIgNTAuNCAxMTIgMTEyIDExMnptMCA0MGMtNzQuMiAwLTIyNCAzNy44LTIyNCAxMTJ2NTZoNDQ4di01NmMwLTc0LjItMTQ5LjgtMTEyLTIyNC0xMTJ6IiBmaWxsPSIjODJhZWZmIi8+PC9zdmc+" />
+        </ion-avatar>
+        <ion-label>B C</ion-label>
+      </ion-chip>
+   
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    
+ <ion-card> 
+    <ion-card-header>
+      <ion-card-title> Prérequis </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p> 1. Votre voiture est compatible OBD-II  Essence a partir de 203</p>
+      <p> 2. Acheter votre boitier de diagnostique carDiag </p>
+      <p> 3. Reperez l emplacement de la prise du diagnostic </p>
+      <p> 4. Brancher l appareil de diagnostic a la prise  </p>
+      <p> 5.  Tourner la cle de contact </p>
+      <p> 6. etablir la connection bluetooth OBD-II </p>
+      <p> 2. Lancer le diagnostic </p>
+      <div class="ion-text-center toBeColoredShip">
+        <ion-chip  routerLink="/home">
+          <ion-label>
+            Lancer
+          </ion-label>
+        </ion-chip>
+      </div>
+
+    </ion-card-content>
+
+
+  </ion-card>
+
+ 
+ 
+</ion-content>
