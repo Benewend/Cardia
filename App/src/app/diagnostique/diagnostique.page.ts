@@ -19,7 +19,7 @@ export class DiagnostiquePage implements OnInit {
   }
 
   ngOnInit() {
-    this.showAlert("here0 ");
+  
    
   }
 
@@ -53,14 +53,13 @@ export class DiagnostiquePage implements OnInit {
     this.bluetooth.isEnabled().then(
       response=>{
         this.state='1';
-       this.showAlert("here")
         this.showAlert(response.toString() );
         this.listAvailiableDevices();
         // this.presentModal();
         console.log(this.devices);
       },
       err=>{
-        this.showAlert("disable");
+        this.showAlert("DÉSACTIVÉ");
       }
     )
   }
