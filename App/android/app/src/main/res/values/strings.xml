@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">Cardiagno</string>
     <string name="title_activity_main">Cardiagno</string>
-    <string name="package_name">com.example.app</string>
-    <string name="custom_url_scheme">com.example.app</string>
+    <string name="package_name">com.Apolos.app</string>
+    <string name="custom_url_scheme">com.Apolos.app</string>
 </resources>

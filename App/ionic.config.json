@@ -1,5 +1,7 @@
 {
   "name": "Cardiagno",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

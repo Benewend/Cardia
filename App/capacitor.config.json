@@ -1,5 +1,5 @@
 {
-  "appId": "com.example.app",
+  "appId": "com.Apolos.app",
   "appName": "Cardiagno",
   "bundledWebRuntime": false,
   "npmClient": "npm",
@@ -11,6 +11,6 @@
   },
   "cordova": {},
   
-  "linuxAndroidStudioPath": "/home/chris/android-studio-id/bin/studio.sh"
+  "linuxAndroidStudioPath": "/home/chris/android-studio-ide-201.7042882-linux/android-studio/bin/studio.sh"
   
 }

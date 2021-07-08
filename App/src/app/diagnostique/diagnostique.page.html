@@ -20,32 +20,58 @@
 
 
 <ion-content>
-    
- <ion-card> 
-    <ion-card-header>
-      <ion-card-title> Prérequis </ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p> 1. Votre voiture est compatible OBD-II  Essence a partir de 203</p>
-      <p> 2. Acheter votre boitier de diagnostique carDiag </p>
-      <p> 3. Reperez l emplacement de la prise du diagnostic </p>
-      <p> 4. Brancher l appareil de diagnostic a la prise  </p>
-      <p> 5.  Tourner la cle de contact </p>
-      <p> 6. etablir la connection bluetooth OBD-II </p>
-      <p> 2. Lancer le diagnostic </p>
-      <div class="ion-text-center toBeColoredShip">
-        <ion-chip  routerLink="/home">
-          <ion-label>
-            Lancer
-          </ion-label>
-        </ion-chip>
+    <div [ngSwitch]="state">
+      <div *ngSwitchCase="'0'">
+        <ion-card> 
+          <ion-card-header>
+            <ion-card-title> Prérequis </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p> 1. Votre voiture est compatible OBD-II  Essence a partir de 2003</p>
+            <p> 2. Acheter votre boitier de diagnostique carDiag </p>
+            <p> 3. Reperez l emplacement de la prise du diagnostic </p>
+            <p> 4. Brancher l appareil de diagnostic a la prise  </p>
+            <p> 5.  Tourner la cle de contact </p>
+            <p> 6. etablir la connection bluetooth OBD-II </p>
+            <p> 2. Lancer le diagnostic </p>
+            <div class="ion-text-center toBeColoredShip">
+              <ion-chip  routerLink="/diagnotic-details">
+                <ion-label>
+                  Lancer
+                </ion-label>
+              </ion-chip>
+              <ion-chip (click)="start()">
+                <ion-label>
+                  Test
+                </ion-label>
+              </ion-chip>
+              
+            </div>
+      
+          </ion-card-content>
+      
+      
+        </ion-card>
+      </div>
+      <div *ngSwitchCase="'1'">
+        <ion-list-header>
+          <ion-label>Choisissez le bluetooth</ion-label>
+        </ion-list-header>
+          <ion-item *ngFor="let phone of devices" (click)="connect(phone.address)">
+            <h3>{{phone.name}}</h3>
+            <p>{{phone.address}}</p>
+          </ion-item>
       </div>
 
-    </ion-card-content>
-
-
-  </ion-card>
-
+      <div *ngSwitchCase="'2'">
+        <ion-item>
+          <ion-label>Données</ion-label>
+          <ion-input placeholder="Données à envoyer" [(ngModel)]="Tobesent" type="text"></ion-input>
+          <ion-button fill="outline" (click)="sendData()">Envoyer</ion-button>
+        </ion-item>
+      </div>
+    
+    </div> 
  
  
 </ion-content>

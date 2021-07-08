@@ -31,7 +31,10 @@ const routes: Routes = [
     path: 'mechanicians',
     loadChildren: () => import('./mechanicians/mechanicians.module').then( m => m.MechaniciansPageModule)
   },
-  
+  {
+    path: 'diagnotic-details',
+    loadChildren: () => import('./diagnotic-details/diagnotic-details.module').then( m => m.DiagnoticDetailsPageModule)
+  }
 ];
 
 @NgModule({

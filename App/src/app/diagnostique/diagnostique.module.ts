@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { DiagnostiquePageRoutingModule } from './diagnostique-routing.module';
 
 import { DiagnostiquePage } from './diagnostique.page';
+import {BluetoothSerial} from '@ionic-native/bluetooth-serial/ngx'
+
 
 @NgModule({
   imports: [
@@ -15,6 +17,9 @@ import { DiagnostiquePage } from './diagnostique.page';
     IonicModule,
     DiagnostiquePageRoutingModule
   ],
-  declarations: [DiagnostiquePage]
+  declarations: [DiagnostiquePage],
+  providers:[
+    BluetoothSerial
+  ]
 })
 export class DiagnostiquePageModule {}

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>diagnoticDetails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let device of devices">
+    <p>{{device.name}}</p>
+    <p>{{device.address}}</p>
+  </ion-item>
+
+</ion-content>
+
+
