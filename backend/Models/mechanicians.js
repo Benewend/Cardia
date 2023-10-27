@@ -13,8 +13,8 @@ const mechanicianSchema = new mongoose.Schema({
     }
 });
 
-mechanicianSchema.index({
-    location: "2dsphere",
-});
+// mechanicianSchema.index({
+//     location: "2dsphere",
+// });
 
 module.exports= mongoose.model("mechanician",mechanicianSchema,"Mechanicians");

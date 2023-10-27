@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'diagnotic-details',
     loadChildren: () => import('./diagnotic-details/diagnotic-details.module').then( m => m.DiagnoticDetailsPageModule)
+  },
+  {
+    path: 'previous-fixes',
+    loadChildren: () => import('./previous-fixes/previous-fixes.module').then( m => m.PreviousFixesPageModule)
   }
 ];
 

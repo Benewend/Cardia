@@ -1,2 +1,2 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/Cardia',{ useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true});
+mongoose.connect("mongodb://chris:Paradis%23100@153.92.211.36:27017/u-wifi?authSource=u-wifi",{ useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true});
